@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+    table, th, td {
+      border: 1px solid black;
+      border-collapse: collapse;
+    }
+    </style>
+    <title>Technical Documentation</title>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="stylesheet" href="./styles.css"
+    
+  </head>
+  <body>
+    <main id="main-doc">
+      <div class="container">
+        <div id="sec-1">
+        <section class="main-section" id="">
+          <header>Navigation</header>
+            <nav id="navbar">
+              <a class="nav-link" href="#main-features">Main Features</a><br/>
+              <a class="nav-link" href="#tech-specs">Tech Specs</a><br/>
+              <a class="nav-link" href="#compatible">Compatibility</a><br/>
+              <a class="nav-link" href="#anatomy">UNO Anatomy</a><br/>
+              <a class="nav-link" href="#control">Controls</a><br/>
+              <a class="nav-link" href="#references">References</a><br/>
+            </nav>
+        </section>
+        </div>
+        <div id="sec-2">
+        <section class="main-section" id="">
+          <header class="box-2">Arduino UNO R3</header>
+            <p>The Arduino UNO is the best board to begin your electronics and coding journey. If this is your first experience with Arduino, the UNO is the most robust board you can start playing with. The UNO is the most widely used and documented board of the whole Arduino family.</p>
+        </section>
+        </div>
+        <div id="sec-3">
+        <section class="main-section" id="">
+          <header id="main-features">Main Features</header>  
+            <p>Arduino UNO is a microcontroller board based on the ATmega328P. It has 14 digital input/output pins (of which 6 can be used as PWM outputs), 6 analog inputs, a 16 MHz ceramic resonator, a USB connection, a power jack, an ICSP header and a reset button. It contains everything needed to support the microcontroller; simply connect it to a computer with a USB cable or power it with a AC-to-DC adapter or battery to get started. You can tinker with your UNO without worrying too much about doing something wrong, worst case scenario you can replace the chip for a few dollars and start over again.</p> 
+        </section>
+        </div>
+        <div id="sec-4">
+        <section class="main-section" id="">
+          <header id="tech-specs">Technical Specifications</header>
+            <p>Presenting the technical specifications for the Arduino UNO R3.</p>
+        </section>
+       </div>
+        <div id="sec-5">
+        <section class="main-section" id="">
+        <table id="table">
+        <tr>
+          <th rowspan="2">Board</th>
+          <td>Name</td>
+          <td>Arduino UNO R3</td>
+        <tr>
+          <td>SKU</td>
+          <td>A000066</td>
+        </tr> 
+        <tr>
+          <th>Microcontroller</th>
+          <td colspan="2">ATmega328P</td>
+        </tr>
+        <tr>
+          <th>USB Connector</th>
+          <td id="column" colspan="2">USB-B</td>
+        </tr>
+        <tr>
+          <th rowspan="5">Pins</th>
+        <tr>
+          <td>Built-in LED Pins</td>
+          <td>13</td>
+        </tr>
+        <tr>
+          <td>Digital I/O Pins</td>
+          <td>14</td>
+        </tr>
+        <tr>
+          <td>Analog Input Pins</td>
+          <td>6</td>
+        </tr>
+        <tr>
+          <td>PWM Pins</td>
+          <td>6</td>
+        </tr>
+        <tr>
+          <th rowspan="4">Communication</th>
+        <tr>
+          <td>UART</td>
+          <td>Yes</td>
+        </tr>
+        <tr>
+          <td>I2C</td>
+          <td>Yes</td>
+        </tr>
+        <tr>
+          <td>SPI</td>
+          <td>Yes</td>
+        </tr>
+        <tr>
+          <th rowspan="5">Power</th>
+        <tr>
+          <td>I/O Voltage</td>
+          <td>5V</td>
+        </tr>
+        <tr>
+          <td>Input Voltage (nominal)</td>
+          <td>7-12V</td>
+        </tr>
+        <tr>
+          <td>DC Current per I/O Pin</td>
+          <td>20mA</td>
+        </tr>
+        <tr>
+          <td>Power Supply Connector</td>
+          <td>Barrel Plug</td>
+        </tr>
+        <tr>
+          <th>Clock Speed</th>
+          <td>Main Processor</td>
+          <td>ATmega328P 16 MHz</td>
+        </tr>
+      </table>
+      </section>
+      </div>
+      <div id="sec-6">
+      <section class="main-section" id="">
+        <header id="compatible"><a href="#top">Compatibility</a></header>
+          <h3>Software and Cloud</h3>
+            <p>The following software tools allow you to program your board both online and offline.</p>
+            <ul id="unordered">
+              <li>Arduino IDE</li>
+              <li>Arduino CLI</li>
+              <li>Web Editor</li>
+            </ul>
+          <h3>Hardware</h3>
+           <p>Arduino has released over 100 hardware products: boards, shields, carriers, kits and other accessories. On this page, you will find a list of reference sites for all active Arduino hardware, including the Nano, MKR and Classic families</p>
+      </section>
+      </div>
+      <div id="sec-7">
+      <section class="main-section" id="">
+        <header id="anatomy"><a href="#top">Arduino Uno Board Anatomy</a></header>
+          <p>Arduino boards sense the environment by receiving inputs from many sensors, and affects their surroundings by controlling lights, motors, and other actuators. Arduino boards are the microcontroller development platform that will be at the heart of your projects. When making something you will be building the circuits and interfaces for interaction, and telling the microcontroller how to interface with other components. Here the anatomy of Arduino Uno.</p>
+          <ol id="ordered">
+            <li><strong>Digital pins </strong>Use these pins with digitalRead(), digitalWrite(), and analogWrite(). analogWrite() works only on the pins with the PWM symbol.</li>
+            <li><strong>Pin 13 LED </strong>The only actuator built-in to your board. Besides being a handy target for your first blink sketch, this LED is very useful for debugging.</li>
+            <li><strong>Power LED </strong>Indicates that your Arduino is receiving power. Useful for debugging.</li>
+            <li><strong>ATmega microcontroller </strong>The heart of your board.</li>
+            <li><strong>Analog in </strong>Use these pins with analogRead().</li>
+            <li><strong>GND and 5V pins</strong>Use these pins to provide +5V power and ground to your circuits.</li>
+            <li><strong>Power connector </strong>This is how you power your Arduino when it's not plugged into a USB port for power. Can accept voltages between 7-12V.</li>
+            <li><strong>TX and RX LEDs </strong>These LEDs indicate communication between your Arduino and your computer. Expect them to flicker rapidly during sketch upload as well as during serial communication. Useful for debugging.</li>
+            <li><strong>USB port </strong>Used for powering your Arduino Uno, uploading your sketches to your Arduino, and for communicating with your Arduino sketch (via Serial. println() etc.).</li>
+            <li><strong>Reset button </strong>Resets the ATmega microcontroller.</li>
+          </ol>
+      </section>
+      </div>
+      <div id="sec-8">
+      <section class="main-section" id="">
+        <header id="control"><a href="#top">Controls</a></header>
+          <p>Arduino programming language can be divided in three main parts: functions, values (variables and constants), and structure. </p> 
+      </section>
+    </div>
+      <div>
+        <h3 id="functions">Functions</h3>
+          <p>For controlling the Arduino board and performing computations.</p>
+          <p>There are two required functions in an Arduino sketch or a program i.e. setup () and loop(). Other functions must be created outside the brackets of these two functions.</p>
+        <h4>Example</h4>
+            <code id="code">
+              /*
+              Blink - turns an LED on for one second, then off for one second, continuously.
+              The setup function runs once when you press reset or power the board */
+            
+              void setup() {<br/>  // initialize digital pin 13 as an output.
+              pinMode(LED_BUILTIN, OUTPUT);<br/>} 
+            </code>
+            <code>
+              // the loop function runs over and over again forever
+         
+              void loop() {
+              digitalWrite(LED_BUILTIN, HIGH); // turn the LED on 
+              delay(1000); // wait for a second
+              digitalWrite(LED_BUILTIN, LOW); // turn the LED off
+              delay(1000); // wait for a second
+              }
+            </code>
+
+        <h3 id="variables">Values</h3>
+          <p>Variables in C programming language, which Arduino uses, have a property called scope. A scope is a region of the program and there are three places where variables can be declared. They are:</p>
+            <ul>
+              <li>Inside a function or a block, which is called local variables.</li>
+              <li>In the definition of function parameters, which is called formal parameters.</li>
+              <li>Outside of all functions, which is called global variables.</li>
+            </ul>
+    
+        <h4>Example</h4>
+            <code id="code">
+              void setup() {
+              } 
+              Void loop() { 
+              int x , y; Local variable declaration 
+              int z;  
+              x = 0; actual initialization 
+              y = 0; 
+              z = 10; 
+              } 
+            </code>
+            <code id="code"> 
+              Int T , S; Global variable declaration 
+              float c = 0; 
+              Void setup () {
+              }
+
+              Void loop () { 
+              int x , y ; Local variable declaration
+              int z ; 
+              x = 0; actual initialization 
+              y = 0; 
+              z = 10;
+              }
+            </code>
+
+        <h3 id="structure">Structure</h3>
+          <p>Software structure consist of two main functions:</p>
+            <ul>
+              <li>setup( ) function</li>
+              <li>loop( ) function</li>
+            </ul>
+        <h3>Example</h3>
+            <code id="code">
+              void setup( ) { 
+              } 
+            </code>
+            <code>
+              void loop( ) { 
+              } <br/>
+            </code>
+            </div>
+      
+      
+      <div id="sec-9">
+      <section class="main-section" id="">
+        <header id="references"><a href="#top">Reference Sites</a></header>
+          <h3>Software</h3>
+            <p>IDE - https://docs.arduino.cc/software/ide-v1</p>
+            <p>IDE - https://docs.arduino.cc/software/ide-v2</p>
+            <p>CLI - https://arduino.github.io/arduino-cli/0.23/</p>
+
+          <h3>Cloud</h3>
+            <p>Web Editor - https://docs.arduino.cc/cloud/web-editor</p>
+            <p>IoT Cloud - https://docs.arduino.cc/cloud/iot-cloud</p>
+            <p>SDK & API - https://www.arduino.cc/reference/en/iot/api/</p>
+
+          <h3>Programming</h3>
+            <p>Language Reference - https://www.arduino.cc/reference/en/iot/api/</p>
+            <p>Libraries - https://www.arduino.cc/reference/en/libraries/</p>
+            <p>Built-in Examples - https://docs.arduino.cc/built-in-examples/</p>
+            <p>Python - https://docs.arduino.cc/learn/programming/arduino-and-python</p>
+
+          <h3>Learning</h3>
+            <p>https://docs.arduino.cc/learn/</p>
+            <p>https://docs.arduino.cc/tutorials/</p>
+
+      </section>
+      </div>
+      <div id="sec-10">
+      <section class="main-section" id="">
+        <footer>DMC 2022</footer>
+      </section>
+    </div>
+  </div>  
+  </main>
+  </body>
+</html> 
